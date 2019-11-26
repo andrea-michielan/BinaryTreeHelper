@@ -3,7 +3,12 @@
 #include <string.h>
 #include <time.h>   /* per la generazione dei valori casuali */
 
-#include "gradosquil.h"     /* include dell'header contenente la definizione della struttura dei nodi dell'albero */
+/* definizione della struttura dei nodi dell'albero */
+typedef struct node {
+  int key;
+  struct node *left;
+  struct node *right;
+} *Node;
 
 #define SPAZI 10    /* costante per il numero di spazi nella stampa dell'albero */
 #define MAX 20      /* numero di nodi che si vuole generare */
